@@ -21,7 +21,8 @@
 
 module tb_sobel;
 
-    parameter WIDTH = 100;
+    module tb_sobel;
+    parameter WIDTH  = 100;
     parameter HEIGHT = 100;
     parameter IMG_SIZE = WIDTH * HEIGHT;
 
