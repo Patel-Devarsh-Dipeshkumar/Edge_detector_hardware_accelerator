@@ -47,5 +47,3 @@ module sobel_calc(
     end
 
 endmodule
-
-endmodule
