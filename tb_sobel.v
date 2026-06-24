@@ -43,9 +43,8 @@ module tb_sobel;
     );
 
     initial begin
-        $readmemh("C:/Users/Devarsh/OneDrive/Documents/Desktop/Img_accelaratir/image.hex", in_mem);
-
-        file_id = $fopen("C:/Users/Devarsh/OneDrive/Documents/Desktop/Img_accelaratir/output.hex", "w");
+        $readmemh("image.hex", in_mem);
+        file_id = $fopen("output.hex", "w");
         if (file_id == 0) begin
             $display("Error: Could not open output file!");
             $stop;
